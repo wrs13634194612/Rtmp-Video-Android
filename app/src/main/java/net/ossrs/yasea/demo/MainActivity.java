@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements RtmpHandler.RtmpL
                     editor.apply();
 
                     //
-                    mPublisher.startPublish("rtmp://118.24.55.19:1935/live/test");
+                    mPublisher.startPublish(rtmpUrl);
                     mPublisher.startCamera();
 
                     if (btnSwitchEncoder.getText().toString().contentEquals("soft encoder")) {
